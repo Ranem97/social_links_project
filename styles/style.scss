@@ -1,0 +1,37 @@
+$textColor: hsl(0, 0%, 100%);
+$backgroundColor: hsl(0, 0%, 8%);
+$containerColor: hsl(0, 0%, 12%);
+$btnColor: hsl(0, 0%, 20%);
+$hoverColor: hsl(75, 94%, 57%);
+
+body {
+  background-color: $backgroundColor;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  color: $textColor;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  background-color: $containerColor;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  color: $hoverColor;
+}
+.container img {
+  border-radius: 50%;
+}
+
+.container a {
+  background-color: $btnColor;
+  padding: 10px 30px 10px 30px;
+  font-weight: 700;
+  border-radius: 10px;
+  color: $textColor;
+  text-decoration: none;
+}
