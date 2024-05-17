@@ -6,25 +6,37 @@ $hoverColor: hsl(75, 94%, 57%);
 
 body {
   background-color: $backgroundColor;
-  display: block;
   justify-content: center;
   align-items: center;
   color: $textColor;
   font-family: "Inter", sans-serif;
-  font-size: 14px;
 }
 
 .container {
+  font-size: 14px;
   background-color: $containerColor;
   border-radius: 10px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+  margin: auto;
+  padding: 20px 40px;
+}
+.container h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
 }
 
 .container h2 {
   color: $hoverColor;
+  margin-top: 0;
+  font-size: 1em;
 }
 .container img {
   border-radius: 50%;
+  width: 100px;
 }
 
 .container a {
@@ -34,4 +46,18 @@ body {
   border-radius: 10px;
   color: $textColor;
   text-decoration: none;
+  display: block;
+  width: 150px;
+  text-align: center;
+  margin-bottom: 15px;
+  transition: all 200ms ease-in-out;
+}
+.container a:hover {
+  background-color: $hoverColor;
+  color: $backgroundColor;
+  cursor: pointer;
+}
+.container p {
+  padding: 10px;
+  margin-top: 0;
 }
