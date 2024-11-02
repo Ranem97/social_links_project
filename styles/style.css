@@ -4,6 +4,9 @@ body {
   align-items: center;
   color: hsl(0, 0%, 100%);
   font-family: "Inter", sans-serif;
+  display: flex;
+  min-height: 100vh;
+  align-content: center;
 }
 
 .container {
